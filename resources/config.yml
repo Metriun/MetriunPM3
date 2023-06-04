@@ -1,0 +1,71 @@
+# Configurações dos gráficos
+# Cada gráfico possui um nível de potência (POWER_LEVEL) que varia de 1 a 5, indicando o consumo de recursos.
+# Leve em consideração que temos um limite de 20 requisições por minuto.
+# Veja a documentação da nossa API em docs.metriun.com
+
+# * Recomendamos que não ative todos os gráficos, apenas o necessário.
+
+# Gráfico: Máximo de jogadores por dia
+# Descrição: Mostra a quantidade máxima de jogadores conectados por dia.
+# Recomendado: Gráfico de barras, linhas, colunas ou pizza.
+# POWER_LEVEL: 3
+# Títulos: Data, Players
+max-players-per-day:
+  chart_token: ""
+  enable: false
+
+# Gráfico: Visitas de jogadores no dia
+# Descrição: Mostra a quantidade de jogadores que entraram no servidor por dia.
+# Recomendado: Gráfico de barras, linhas, colunas ou pizza.
+# POWER_LEVEL: 3
+# Títulos: Data, Players
+visits-in-the-day:
+  chart_token: ""
+  enable: false
+
+# Gráfico: Desempenho do servidor por tempo
+# Descrição: Mostra o desempenho do servidor ao longo do tempo, em intervalos determinados.
+# Observação: O tempo mínimo é de 1 hora (3600 segundos).
+# Recomendado: Gráfico de barras, linhas, colunas ou pizza.
+# POWER_LEVEL: 1
+# Títulos: Data, TPS
+tps-per-time:
+  chart_token: ""
+  enable: false
+  send_time: 3600 # Tempo em segundos
+
+# Gráfico: Tempo médio de sessão dos jogadores por dia
+# Descrição: Mostra o tempo médio que os jogadores ficaram online por dia.
+# Recomendado: Gráfico de barras, linhas, colunas ou pizza.
+# POWER_LEVEL: 2
+# Títulos: Data, Sessões
+session-average:
+  chart_token: ""
+  enable: false
+
+# Gráfico: Jogadores por país
+# Descrição: Mostra a quantidade de jogadores por país.
+# Recomendado: Gráfico Geográfico.
+# POWER_LEVEL: 4
+# Títulos: País, Players
+player-by-country:
+  chart_token: ""
+  enable: false
+
+# Gráfico: Latência do servidor
+# Descrição: Mostra a latência do servidor em milissegundos.
+# Recomendado: Gráfico de barras, linhas, colunas ou pizza.
+# POWER_LEVEL: 3
+# Títulos: Data, Latência
+server-latency:
+  chart_token: ""
+  enable: false
+
+# Gráfico: Registros de players por dia
+# Descrição: Mostra quantos jogadores entraram pela primeira vez no servidor naquele dia.
+# Recomendado: Gráfico de barras, linhas ou colunas.
+# POWER_LEVEL: 2
+# Títulos: Data, Registros
+player-registration-per-day:
+  chart_token: ""
+  enable: false
